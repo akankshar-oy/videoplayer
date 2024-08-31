@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+
+<div class="video-container">
+    <video id="videoPlayer" controls>
+        <source id="videoSource" src="" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    
+    <!-- Gesture control areas -->
+    <div class="control-area left" id="leftControl"></div>
+    <div class="control-area middle" id="middleControl"></div>
+    <div class="control-area right" id="rightControl"></div>
+</div>
+
+<input type="file" id="videoInput" accept="video/mp4">
+
+<script src="videoPlayer.js"></script>
+</body>
+</html>
